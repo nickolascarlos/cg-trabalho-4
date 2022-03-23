@@ -80,7 +80,7 @@ void display(){
 
 // Funções relacionadas ao cálculo e à renderização
 
-// Essa função calcula a interseção da linha dos vértices com o plano especificado por plane_id
+// Essa função calcula a interseção da linha do vértice com o plano especificado por plane_id
 // plane_id: 0 = Z, 1 = X, 2 = Y
 void intersection(int xp, int yp, int zp, int plane_id, int vertex_index, float* vertices_vector) {    
     
@@ -98,13 +98,13 @@ void intersection(int xp, int yp, int zp, int plane_id, int vertex_index, float*
         case 1:
             // Interseção com o plano X
             xp_ = yp;
-            yp_ = zp + 10; // Além da transformação necessária, "levanta" o vértice em 10 unidades
+            yp_ = zp + 10; // Além da transformação necessária, levanta o vértice em 10 unidades para que ele fique evidente quando for pintado
         break;
 
         case 2:
             // Interseção com o plano Y
             xp_ = xp;
-            yp_ = zp + 10; // Além da transformação necessária, "levanta" o vértice em 10 unidades
+            yp_ = zp + 10; // Além da transformação necessária, levanta o vértice em 10 unidades pelo mesmo motivo citado acima
         break;
     }
 
